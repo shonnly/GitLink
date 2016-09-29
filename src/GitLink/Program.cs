@@ -68,7 +68,7 @@ namespace GitLink
             Log.Info(string.Empty);
             Log.Info("Press any key to continue");
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }

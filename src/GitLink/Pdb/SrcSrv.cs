@@ -40,7 +40,7 @@ namespace GitLink.Pdb
 						sw.WriteLine("TRGFILE=%fnbksl%(%targ%%var2%)");
 						sw.WriteLine("SRCSRVTRG=%TRGFILE%");
 						//sw.WriteLine("SRCSRVCMD=powershell -NoProfile -Command \"(New-Object System.Net.WebClient).DownloadFile('%RAWURL%', '%TRGFILE%')\"");
-						sw.Write("SRCSRVCMD=powershell invoke-command -scriptblock {param($url='%RAWURL%', $output='%TRGFILE%'); (New-Object System.Net.WebClient).DownloadFile($url, $output)}");
+						sw.WriteLine("SRCSRVCMD=powershell invoke-command -scriptblock {param($url='%RAWURL%', $output='%TRGFILE%'); (New-Object System.Net.WebClient).DownloadFile($url, $output)}");
 					}
 					else
 					{
